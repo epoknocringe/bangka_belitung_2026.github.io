@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangka Belitung Edutrip</title>
+    <style>
+        html{
+    scroll-behavior: smooth;
+}
+
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9, #c10, #c11 {
+    scroll-margin-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 200vh;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.header {
+    height: 400px;
+    background-image: url("additional needs/banner\ bangka\ belitung.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content{
+    color: white;
+    text-align: center;
+}
+
+.navbar{
+    background: rgba(51, 51, 51, 0.85);
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    backdrop-filter: blur(10px); /* glass effect */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-size: 13px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 6px;
+    padding: 10px 16px;
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+.navbar a:hover{
+    color: #7effff;
+    transform: translateY(-3px) scale(1.05);
+    background: rgba(0, 145, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(54, 134, 171, 0.3);
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #7effff, transparent);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover::after{
+    width: 80%;
+}
+
+.chapter{
+    padding:20px;
+    margin:40px auto;
+    width:80%;
+    background: rgba(202, 202, 202, 0.642);
+    border-radius:10px;
+    animation: fadeIn 1s ease;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.navbar-gallery{
+    background:#333;
+    padding:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar-gallery a{
+    color:white;
+    text-decoration: none;
+    margin:6px;
+    padding:8px;
+}
+
+
+.gallery-box{
+    text-decoration:none;
+    color:black;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+    height:100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:20px;
+}
+
+.chapter-btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.chapter-btn:hover{
+    background: linear-gradient(135deg, #7effff, #7ed2ff);
+    color: black;
+    transform: translateY(-2px) scale(1.05);
+}
+
+.chapter-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.5s;
+}
+
+.chapter-btn:hover::before{
+    left: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="title"><h1>BANGKA BELITUNG EDUTRIP</h1></div>
+            <p>by: Varell, Keynan & Oliver</p>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html"><b>Home</b></a>
+        <a href="#c1"><b>Chapter 1</b></a>
+        <a href="#c2"><b>Chapter 2</b></a>
+        <a href="#c3"><b>Chapter 3</b></a>
+        <a href="#c4"><b>Chapter 4</b></a>
+        <a href="#c5"><b>Chapter 5</b></a>
+        <a href="#c6"><b>Chapter 6</b></a>
+        <a href="#c7"><b>Chapter 7</b></a>
+        <a href="#c8"><b>Chapter 8</b></a>
+        <a href="#c9"><b>Chapter 9</b></a>
+        <a href="#c10"><b>Chapter 10</b></a>
+        <a href="#c11"><b>Chapter 11</b></a>
+        <a href="form.html"><b>Form</b></a>
+    </div>
+    
+    <div id="home" class="chapter">
+        <h2>About Us</h2>
+        <p>kelompok saya, varell, keynan dan oliver ingin menceritakan tentang pengalaman kami yang menraik dalam bangka belitung bersama teman teman kami. di website ini kami menceritakan tentang apa yang kami pelajari, refleksi dan pengalamn seru yang kami lintasi. semoga kalian enjoy our adventure </p>
+    </div>
+
+    <div id="c1" class="chapter">
+        <h2>Chapter 1</h2>
+        <p>Jam 6:00 a.m, saya sampai ke sekolah dengan memakai baju seragam sekolah dan sepatu kets masih merasa lelah namun bersemangat. Setelah absensi dan doa pagi, kami berangkat ke bus untuk destinasi pertama yaitu PT pralon. Di dalam bus itu penuh dengan tertawa, temanku tobi ada spasi extra di sebelah nya, maka aku pun ambil tempat duduk itu. 
+        Dari jam 6:30 sampai 9:00 a.m., kita berangkat ke PT pralon. Perjalanan rasa seperti permulaan suatu yang penting. Pada jam 9:00 a.m kami semua sampai dan memasuki pabrik. Kami dibagi menjadi beberapa kelompok dan kami semua melakukan pembelajaran secara rotasi tentang produksi pipa di PT pralon. 
+        Dalam sesi pertama, kami semua belajar tentang mesin dan bahan mentah yang digunakan untuk membuat pipa. Di sesi kedua, kami belajar system teknologi dan distribusi process. Sesi terakhir, jelaskan sejarah dan fondasi dari perusahaan PT pralon.
+        Lalu datang moment paling impactful dimana kami semua memasuki lantai produksi. Kami memakai helm dan masker. Kami mengobservasi bagaimana plastic dipanaskan, bentuk, dan di dinginkan dengan air sehingga di process menjadi pipa yang dapat digunakan. Lantai produksi itu sangat berisik, panas dan sangat tegang. Aku sadar betapa banyak energy dan mesin yang digunakan untuk produksi object setiap hari dan bahkan kita pun jarang memikirkannya.
+        Pad siang hari, kami semua makan siang di bus sambil menuju ke universitas indonesia atau dalam singkat UI di salemba. Pada jam 1:30 pm., kami semua sampai dan mengikuti aktivitas di sana sampai jam 4:00p.m. kami ketemu dengan murid, mendengar eksplanasi tentang fakultas, dan bahkan mengalami kampus tour pendek. Melihat universitas dengan dekat membuat masa depan merasa lebih menyenangkan dan intimidasi.
+        Pada jam 4:00 p.m., kami semua memulai perjalanan jauh ke bandung, kami sampai ke paskal 23 sekitar jam 7:00 p.m. untuk makan malam, dan kami semua lanjut ke hotel harris untuk beristirahat. Hari itu adalah hari yang sangat panjang dan melelahkan tetapi semua ini hanya pemula.
+        </p>
+        <a href="chapter1box.html" class="chapter-btn">View Gallery</a>
+
+    </div>
+
+    <div id="c2" class="chapter">
+        <h2>Chapter 2</h2>
+        <p>Saya bangun lebih awal dan siap siap berangkat ke ITB. dari jam 9:00 ke 11:00 a.m., kami hadir sesi di institut teknologi bandung. Aku mengikuti group electronic, dimana lecturer menjelaskan tentang jurusan engineering dan inovasinya. Kelas tersebut itu penuh dengan murid dari sekolah lain. Saya merasa kecil namun termotivasi.
+        Setelah kampus tour, kami semua berangkat ke UNPAR. Saya memilih kelompok matematika. Ada dosen yang menjelaskan tentang actuarial science. Beliau mengatakan bahwa profesi aktuaris itu sangat kecil di indonesia. Aku terkejut ketika belajar bagaimana matematika itu berperan sangat berat dalam financial stability dan national planning. Ini pun mengubah bagaimana aku melihat angka. 
+        Pada hari terakhir kami semua makan malam di PVJ sebelum balik ke hotel. Saya pun merasa lelah tetapi terbangun secara intelektual.
+        </p>
+        <a href="chapter2box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c3" class="chapter">
+        <h2>Chapter 3</h2>
+        <p>Dengan memakai seragam batik, saya dan teman teman mengunjungi deakin university. Aku mengikuti IT workshop group. Kami belajar basic coding di website berjudul “scratch” dan bagaimana berfikir secara struktural dan menyelesaikan masalah dunia nyata.
+        Ini mengejutkanku bahwa teknologi, matematika dan engineering, semua yang kita pelajari terkoneksi dengan bagaimana lingkungan berfungsi sehingga menciptakan system, struktur dan tanggung jawab.
+        Sore itu, kami semua berangkat ke hotel dekat dengan airport. Kami check in, makan malam dan istirahat. Fase akademik edutrip kami sudah selesai. Pengalaman yang ada berikutnya akan membuat saya berfikir dan ubah saya lebih dalam.
+        </p>
+        <a href="chapter3box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c4 " class="chapter">
+        <h2>Chapter 4</h2>
+        <p>Kami terbang ke pangkal pinang dan sampai pagi hari. Setelah makan siang di lokal resto, kami menjenguk plantasi buah cocoa.
+        Di sana, kami belajar tentang process pasca panen dan bagaimana cocoa menjadi coklat. Setelah itu, di cokelat candU production house, kami semua diberi sample kue cokelat dan minuman coklat. Kemanisan yang masuk ke dalam mulutku membuat saya sangat gembira tetapi saya tidak bisa mengabaikan yang lain.
+        Di balik pertanian dan produksi terdapat pemanfaatan lahan. Di balik pemanfaatan lahan terdapat eksploitasi.
+        Malam itu, ketika saya menulis refleksi, saya mulai berpikir bahwa bangka belitung itu bukan hanya destinasi tourist tetapi bangka belitung adalah sebuah tanah.
+        </p>
+        <a href="chapter4box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c5" class="chapter">
+        <h2>Chapter 5</h2>
+        <p>Setelah misa di pagi hari, kami semua pergi dan melihat danau kaolin. Danau ini sangat biru dan indah. Tetapi keindahan itu adalah penipuan. Danau ini diciptakan oleh aktivitas tambangan. Air pun bercampur dengan acid. Beberapa dari sepatu temanku meleleh sedikit setelah tidak sengaja menginjak air di danau kaolin itu.
+        Ketika saya berdiri disitu, saya merasa terganggu. Danau terlihat seperti surga untuk photo, namun danau itu adalah bekas luka yang ditinggalkan dengan ekstraksi.
+        Setelah itu saya dan teman teman berangkat ke sky dragon, kami interaksi dengan binatang dan pergi memancing ikan. Jika kalian tidak tahu, saya itu sangat takut dengan binatang kecil terutama serangga. SEMUA serangga menurut mataku itu sangat menjijikan. Maka ketika mereka menempel umpan cacing kepada pancinganku. Aku jerit jerit setiap kali angin meniup cacing itu dekatku. Pada akhirnya aku menangkap 3 ikan dan ikan ikan yang ditangkap semua dimasak dan dimakan.
+        Malam itu dalam sharing time, saya sadar kami semua tertawa, mengumpul memori, dan saling membuka dengan satu sama lain.
+        </p>
+        <a href="chapter5box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c6" class="chapter">
+        <h2>Chapter 6</h2>
+        <p>Dengan pesawat, kami semua berangkat ke belitung dan pergi ke open pit nam salu
+        Di sana, realitas tambangan disana tidak dapat disangkal. Tanah itu berlubang. Lapisan-lapisan tanah terlihat seperti luka terbuka.
+        Pemandu wisata menjelaskan formasi geologi secara detail bagaimana penambangan timah membentuk perekonomian Bangka Belitung. Namun, saat mendengarkan, saya merasakan emosi yang bertentangan.
+        Iya, itu benar, tambngan itu membawa uang dan benar juga tambangan itu menciptakan regions. 
+        Tetapi harga yang harus dibayar apa?
+        Tanahnya gersang. Vegetasinya hilang. Tidak terlihat seperti lahan yang subur. Terlihat seperti lahan terbengkalai.
+        </p>
+        <a href="chapter6box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c7" class="chapter">
+        <h2>Chapter 7</h2>
+        <p>Kami semua berangkat ke bukit peramun pada pagi hari. Saya dikelilingi oleh pohon dan udara segar, aku pun merasa ini adalah rasa natur yang seharusnya ada yaitu hidup dan bernafas.
+        Setelah itu, kamu melihat museum andrea hirata dan sekolah laskar pelangi. Tempat ini itu direpresentasikan dengan mimpi, kerja keras dan edukasi yang bertumbuh di desa kecil.
+        Ini membuat saya sadar sesuatu yang kuat. Bahkan di desa kecil, sebuat mimpi bisa tumbuh. Tetapi seperti tanaman yang membutuh air dan matahari untuk bertumbuh, mimpi pun butuh tanggung jawab.
+        </p>
+        <a href="chapter7box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c8" class="chapter">
+        <h2>Chapter 8</h2>
+        <p>Kami semua berangkat ke tanjung pandan, menjenguk museum geologi dan belajar tentang sejarah bangka belitung. Batu, mineral dan formasi diceritakan dalam cerita berumur miliyaran.
+        Setelah makan siang, kami berangkat ke pantai dan berenang di sana. Kami semua sangat senang dapat waktu yang lebih bebas dan dapat bersenang senang bersama. Ada yang bermain bola, beranang, explore dan photo photo. 
+        Setelah itu kami semua bilas, snack, makan malam dan pulang sehingga menunggu jika ada keajaiban lagi untuk keesokan harinya
+        </p>
+        <a href="chapter8box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c9" class="chapter">
+        <h2>Chapter 9</h2>
+        <p>Hari ini adalah hari favoritku. Bahkan saya pun ketiduran dan hampir ditinggal.
+        Kami semua pergi melihat batu garuda, pulau pasir, dan batu berlayar. Lali kami snorkling tengah laud dekat pulau lengkuas.
+        Tetapi di laut itu saya merasa sangat kecewa karena koral koral di bawah itu sudah mati semua dan ikan pun tidak berwarna lagi. Tempat snorkeling pun tidak menjadi vibrant tetapi gelap dan seram.
+        Saya berekspektasi warna namun bertemu dengan ketidakhadiran mother nature.
+        Setelah dari pulau kepayang dan goa kelayang, kami explorasi dan mengambil beberapa photo sehingga waktunya makan siang. Teman temanku kuburkan aku di pasir sebagai candaan namun karena terlalu banyak orang berjalan, pasir pun kena mataku. Walaupun saya berada di posisi tidak enak, kami semua tertawa.
+        </p>
+        <a href="chapter9box.html" class="chapter-btn">View Gallery</a>
+    </div>
+
+    <div id="c10" class="chapter">
+        <h2>Chapter 10</h2>
+        <p>Hari ini adalah hari terakhir. Kami makan pagi, menikmati hotel dan siap siap berangkat ke jakarta.
+
+Dalam pesawat, aku merasa sangat senang untuk pulang karena dapat membagi oleh oleh kepada teman temanku dan lanjut untuk istirahat.
+
+Ketika sudah sampai jakarta, kami semua mengambil koper dan berterima kasih kepada kakak kakak yang sudah membimbing kita dan juga kepada guru guru yang rela membawa kita balik ke sekolah sehingga penjemputan pun dapan menjadi lebih gampang. 
+
+Aku sangat bersyukur dapat mempunyai kesempatan untuk edutrip ini. Walaupun ada naik dan turun, saya dapat menikmati semua ini dengan teman temanku.
+</p>
+    </div>
+
+    <div id="c11" class="chapter">
+        <h2>Chapter 11</h2>
+        <p>Saya belajar banyak dalam perjalanan ini. Dalam edutrip saya berfikir, kalau kita benar benar earth keepers, kenapa memancing ikan (membunuh binatang) dan menginjak menginjak tanah termasuk salah satu cara menjaga bumi ini.
+
+Saya melihat kembali bahwa manusia itu sangat berharga sehingga kami semua duduk bertahta diatas semua ciptaan Tuhan. Tidak ada mahluk lain yang dapat melebihi kita karena kita adalah mahkota ciptaan. 
+
+Maka itu manusia tidak boleh merasa less value karena kami semua ada di tangan Tuhan. Ingat, kami semua adalah manusia menjijikan dimana kamu menghancurkan segala ciptaan Tuhan dan exploitasi untuk diri sendiri. Kita seharusnya dihancurkan namun alasan kita semua masih ada di sini itu karena tangan Tuhan masih memegang dunia ini dengan erat. Maka itu kami semua bisa berubah dari earth killers menjadi earth keepers. Perjalanan ini akan selalu mengingatkanku untuk belajar, bertanggung jawab, menjaga alam, menghargai teman, dan berjalan maju dengan iman dan harapan.
+
+Kemampuan manusia terbaik dan terbesar tidak bersandar kepada kekuatan, tetapi kemampuan terbesar manusia bersandar kepada kemampuan untuk berubah….
+</p>
+    </div>
+
+    <div class="navbar">
+<a href="#gallery">Gallery</a>
+</div>
+
+<div class="content">
+
+<div class="gallery-grid">
+
+<a href="chapter1box.html" class="gallery-box">
+<div class="gallery-title">Chapter 1</div>
+</a>
+
+<a href="chapter2box.html" class="gallery-box">
+<div class="gallery-title">Chapter 2</div>
+</a>
+
+<a href="chapter3box.html" class="gallery-box">
+<div class="gallery-title">Chapter 3</div>
+</a>
+
+<a href="chapter4box.html" class="gallery-box">
+<div class="gallery-title">Chapter 4</div>
+</a>
+
+<a href="chapter5box.html" class="gallery-box">
+<div class="gallery-title">Chapter 5</div>
+</a>
+
+<a href="chapter6box.html" class="gallery-box">
+<div class="gallery-title">Chapter 6</div>
+</a>
+
+<a href="chapter7box.html" class="gallery-box">
+<div class="gallery-title">Chapter 7</div>
+</a>
+
+<a href="chapter8box.html" class="gallery-box">
+<div class="gallery-title">Chapter 8</div>
+</a>
+
+<a href="chapter9box.html" class="gallery-box">
+<div class="gallery-title">Chapter 9</div>
+</a>
+
+</div>
+</body>
+</html>
