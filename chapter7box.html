@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery box 6</title>
+
+    <style>
+                body{
+            font-family:arial;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        .header{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+         .gallery img{
+        transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover{
+        transform: scale(1.08) rotate(1deg);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+       .gallery{
+        padding:20px;
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+        gap:20px;
+        }
+
+        .gallery img{
+        width:100%;
+        height:220px;
+        object-fit: cover; 
+        border-radius:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        }
+
+        .home, .foward{
+        display:inline-block;
+        margin:20px;
+        text-decoration:none;
+        color:white;
+        background: linear-gradient(135deg, #333, #555);
+        padding:12px 18px;
+        border-radius:8px;
+        font-weight:500;
+        letter-spacing:0.5px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        }
+
+        .foward{
+            float:right;
+        }
+
+        .home:hover, .foward:hover{
+            transform: translateY(-3px) scale(1.05);
+            background: linear-gradient(135deg, #7effff, #7ed2ff);
+            color:black;
+        }
+
+        .home::before, .foward::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: 0.5s;
+        }
+
+        .home:hover::before, .foward:hover::before{
+            left: 100%;
+        }
+
+        .page{
+            opacity: 0;
+            transform: translateY(30px);
+            animation: pageFade 0.8s ease forwards;
+        }
+
+        @keyframes pageFade{
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery img{
+            opacity: 0;
+            transform: scale(0.9);
+            animation: imgFade 0.6s ease forwards;
+        }
+
+        .gallery img:nth-child(1){ animation-delay: 0.1s; }
+        .gallery img:nth-child(2){ animation-delay: 0.2s; }
+        .gallery img:nth-child(3){ animation-delay: 0.3s; }
+        .gallery img:nth-child(4){ animation-delay: 0.4s; }
+        .gallery img:nth-child(5){ animation-delay: 0.5s; }
+
+        @keyframes imgFade{
+            to{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><b>Chapter 7 Gallery</b></h1>
+    </div>
+
+    <a href="chapter6box.html" class="home">⬅ Chapter 6</a>
+    <a href="chapter8box.html" class="foward"> Chapter 8 ➡</a>
+
+    <div class="gallery">
+        <img src="day 7 images/IMG_20260210_064025.jpg">
+        <img src="day 7 images/IMG_20260210_094328.jpg">
+        <img src="day 7 images/IMG_20260210_101223.jpg">
+        <img src="day 7 images/IMG_20260210_102537.jpg">
+        <img src="day 7 images/IMG_20260210_103530.jpg">
+        <img src="day 7 images/IMG_20260210_104515.jpg">
+        <img src="day 7 images/IMG_20260210_131429.jpg">
+        <img src="day 7 images/IMG_20260210_152022.jpg">
+        <img src="day 7 images/IMG_20260210_152446.jpg">
+        <img src="day 7 images/IMG_20260210_153054.jpg">
+        <img src="day 7 images/IMG_20260210_161141.jpg">
+    </div>
+    
+</body>
+</html>

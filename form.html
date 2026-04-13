@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-image: url("./day_9_images/IMG_20260212_100619.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+    }
+
+        @keyframes fadeInUp {
+     to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+        .header{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .home, .foward{
+        display:inline-block;
+        margin:20px;
+        text-decoration:none;
+        color:white;
+        background: linear-gradient(135deg, #333, #555);
+        padding:12px 18px;
+        border-radius:8px;
+        font-weight:500;
+        letter-spacing:0.5px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        }
+
+        .foward{
+            float:right;
+        }
+
+        .home:hover, .foward:hover{
+            transform: translateY(-3px) scale(1.05);
+            background: linear-gradient(135deg, #7effff, #7ed2ff);
+            color:black;
+        }
+
+        .home::before, .foward::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: 0.5s;
+        }
+
+        .home:hover::before, .foward:hover::before{
+            left: 100%;
+        }
+
+        form{
+            width: 500px;       
+            margin: 50px auto;
+            background: rgba(255,255,255,0.8);
+            padding: 30px;         
+            border-radius: 10px;
+        }
+
+        textarea{
+        width: 97%;
+        height: 150px;
+        padding: 10px;
+        font-size: 16px;
+        resize: none;
+    }
+
+        .textarea-email {
+            width: 50%;
+        }
+
+        .textarea-name {
+            width:30%
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><b>Form Feedback</b></h1>
+    </div>
+
+    <a href="index.html" class="home">⬅ Back to Home</a>
+
+    <form class="form">
+  <label>Name:</label><br>
+  <input class="textarea-name" type="text" name="name"><br><br>
+
+  <label>Email:</label><br>
+  <input class="textarea-email" type="email" name="email"><br><br>
+
+  <label>feedback:</label><br>
+  <textarea class="textarea" name="message"></textarea><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div id="review">
+
+</div>
+    
+</body>
+</html>
